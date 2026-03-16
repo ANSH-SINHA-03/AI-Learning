@@ -31,7 +31,17 @@ def check_win(player, computer):
             return "Scissors cuts Paper, you win :)"
         else: 
             return "Rock smashes Scissors, you loose :("
+        
+while True:
 
-choices = get_choices()
-result = check_win(choices["player"], choices["computer"])
-print(result)
+    choices = get_choices()
+    result = check_win(choices["player"], choices["computer"])
+    print(result)
+
+    play_again = input("Play again? (y/n): ").lower()
+
+    if play_again != "y":
+        print("Thanks for playing!")
+        break
+
+
