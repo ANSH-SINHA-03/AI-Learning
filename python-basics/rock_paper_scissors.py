@@ -32,6 +32,7 @@ def check_win(player, computer):
         else: 
             return "Rock smashes Scissors, you loose :("
         
+
 while True:
 
     choices = get_choices()
